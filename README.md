@@ -1,2 +1,7 @@
 # sprite-tools
-tools for 2d game sprite sheet
+Tools for 2d game sprite sheet.
+
+## marge.py
+Marge single sprite images to one sprite sheet.
+
+
