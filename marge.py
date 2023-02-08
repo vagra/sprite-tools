@@ -40,7 +40,7 @@ def marge_sprites(actor: Actor):
                     sprite = sprite.resize((SCALE_WIDTH, SCALE_HEIGHT), Image.Resampling.NEAREST)
                     
                     x = SCALE_WIDTH * ( FRAMES * col + frame )
-                    y = SCALE_WIDTH * ( DIRECTIONS * row + direction )
+                    y = SCALE_HEIGHT * ( DIRECTIONS * row + direction )
 
                     print(x, y, sprite_path)
 
