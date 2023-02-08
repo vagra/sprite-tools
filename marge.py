@@ -45,7 +45,7 @@ def marge_sprites(actor: Actor):
                     print(x, y, sprite_path)
 
                     sheet.paste(shadow, (x, y))
-                    sheet.paste(sprite, (x, y))
+                    sheet.paste(sprite, (x, y), sprite)
 
                     frame += 1
 
