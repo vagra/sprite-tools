@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 
-IN_DIR = 'input'
-OUT_DIR = 'output'
+IN_DIR = '../input/type1'
+OUT_DIR = '../output/type1'
 
 SHADOWS_DIR = '_shadows'
 SHADOW = 'shadow'

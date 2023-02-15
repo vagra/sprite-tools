@@ -9,7 +9,7 @@ from dataclasses import dataclass
 
 from PIL import Image, ImageFile, ImageGrab, ImageDraw
 
-from common import *
+from config import *
 from check import check_assets
 
 

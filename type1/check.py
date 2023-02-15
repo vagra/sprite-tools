@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from PIL import Image, ImageFile, ImageGrab, ImageDraw
 
-from common import *
+from config import *
 
 
 def check_assets() -> Assets:
