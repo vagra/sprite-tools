@@ -20,7 +20,7 @@ def check_assets() -> Assets:
 def check_actors() -> list[Actor]:
 
     actors: list[Actor] = []
-    frames: int = FRAMES * ACTIONS
+    frames: int = (FRAMES+1) * ACTIONS
 
     for i in range(ACTORS):
 

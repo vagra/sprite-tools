@@ -29,12 +29,18 @@ def marge_actions(actor: Actor):
         s = t[0]
         d = t[1]
 
-        for i in range(3):
-            sx = (s[0] * FRAMES + i) * FRAME_WIDTH
+        sx :int = 0
+
+        for i in range(FRAMES + 1):
+            if i >= FRAMES:
+                sx = (s[0] * FRAMES + 0) * FRAME_WIDTH
+            else:
+                sx = (s[0] * FRAMES + i) * FRAME_WIDTH
+                
             sy = s[1] * FRAME_HEIGHT
             src_box = ( sx, sy, sx + FRAME_WIDTH, sy + FRAME_HEIGHT)
 
-            dx = (d[0] * FRAMES + i) * FRAME_WIDTH
+            dx = (d[0] * (FRAMES+ 1) + i) * FRAME_WIDTH
             dy = d[1] * FRAME_HEIGHT
             dst_box = ( dx, dy, dx + FRAME_WIDTH, dy + FRAME_HEIGHT)
 
